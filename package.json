@@ -1,0 +1,36 @@
+{
+  "name": "ezito-async",
+  "main": "index.js",
+  "version": "2.0.0",
+  "description": " sync , queue , thread party function in node.js",
+  "contributors": [
+    "muhammad ali aghajanpour"
+  ],
+  "author": {
+    "name": "muhammad ali aghajanpour",
+    "email": "mhmrasoul@gmail.com"
+  },
+  "dependencies": { 
+    "node-gyp": "^10.0.1"
+  },
+  "peerDependenciesMeta": {
+    "node-gyp": {
+      "optional": true
+    }
+  },
+  "files": [
+    "binding.gyp",
+    "src/",
+    "index.js"
+  ],
+  "keywords": [
+    "async",
+    "sync",
+    "parallel",
+    "thread"
+  ], 
+  "scripts": {
+    "install": "node-gyp configure --release && node-gyp build --release",
+    "rebuild": "node ./src/rf.js  && node-gyp configure --release && node-gyp build --release"
+  }
+}
